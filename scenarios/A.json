@@ -1,0 +1,197 @@
+{
+  "horizon_days": 14,
+  "shifts": [
+    {
+      "code": "D",
+      "start_hour": 7,
+      "duration_h": 8
+    },
+    {
+      "code": "E",
+      "start_hour": 15,
+      "duration_h": 8
+    },
+    {
+      "code": "N",
+      "start_hour": 23,
+      "duration_h": 8
+    }
+  ],
+  "staff": [
+    {
+      "id": "asha",
+      "name": "Asha",
+      "skills": [
+        "doctor"
+      ]
+    },
+    {
+      "id": "bala",
+      "name": "Bala",
+      "skills": [
+        "doctor"
+      ]
+    },
+    {
+      "id": "chitra",
+      "name": "Chitra",
+      "skills": [
+        "nurse"
+      ]
+    },
+    {
+      "id": "dev",
+      "name": "Dev",
+      "skills": [
+        "nurse"
+      ]
+    },
+    {
+      "id": "esha",
+      "name": "Esha",
+      "skills": [
+        "nurse"
+      ]
+    },
+    {
+      "id": "farid",
+      "name": "Farid",
+      "skills": [
+        "nurse"
+      ]
+    },
+    {
+      "id": "gita",
+      "name": "Gita",
+      "skills": [
+        "nurse"
+      ]
+    },
+    {
+      "id": "hari",
+      "name": "Hari",
+      "skills": [
+        "nurse"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "R1",
+      "text": "At least 2 staff on D every day.",
+      "type": "COVERAGE",
+      "params": {
+        "shift": "D",
+        "days": "ALL",
+        "min": 2
+      }
+    },
+    {
+      "id": "R2",
+      "text": "At least 1 staff on E every day.",
+      "type": "COVERAGE",
+      "params": {
+        "shift": "E",
+        "days": "ALL",
+        "min": 1
+      }
+    },
+    {
+      "id": "R3",
+      "text": "At least 1 nurse on N every day.",
+      "type": "COVERAGE",
+      "params": {
+        "shift": "N",
+        "days": "ALL",
+        "skill": "nurse",
+        "min": 1
+      }
+    },
+    {
+      "id": "R4",
+      "text": "At least 1 doctor on D every day.",
+      "type": "COVERAGE",
+      "params": {
+        "shift": "D",
+        "days": "ALL",
+        "skill": "doctor",
+        "min": 1
+      }
+    },
+    {
+      "id": "R5",
+      "text": "At least 11 hours rest between consecutive-day shifts.",
+      "type": "MIN_REST_HOURS",
+      "params": {
+        "hours": 11
+      }
+    },
+    {
+      "id": "R6",
+      "text": "At most 5 consecutive working days per person.",
+      "type": "MAX_CONSECUTIVE_DAYS",
+      "params": {
+        "max": 5
+      }
+    },
+    {
+      "id": "R7",
+      "text": "At most 5 shifts in every rolling 7-day window per person.",
+      "type": "MAX_SHIFTS_IN_WINDOW",
+      "params": {
+        "window_days": 7,
+        "max": 5
+      }
+    },
+    {
+      "id": "R8",
+      "text": "Chitra unavailable on days 3, 4, 5 (zero-based).",
+      "type": "UNAVAILABLE",
+      "params": {
+        "staff": [
+          "chitra"
+        ],
+        "days": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "R9",
+      "text": "Everyone works at least 6 shifts in total.",
+      "type": "MIN_SHIFTS_TOTAL",
+      "params": {
+        "staff": "ALL",
+        "min": 6
+      }
+    },
+    {
+      "id": "R10",
+      "text": "Farid works no night shifts.",
+      "type": "MAX_SHIFT_TYPE_COUNT",
+      "params": {
+        "staff": [
+          "farid"
+        ],
+        "shift": "N",
+        "max": 0
+      }
+    },
+    {
+      "id": "R8b",
+      "text": "Esha unavailable on days 9, 10 (zero-based).",
+      "type": "UNAVAILABLE",
+      "params": {
+        "staff": [
+          "esha"
+        ],
+        "days": [
+          9,
+          10
+        ]
+      }
+    }
+  ]
+}

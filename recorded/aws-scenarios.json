@@ -1,0 +1,751 @@
+{
+  "source": "AWS Lambda",
+  "recorded_at": "2026-10-26T17:52:48.673544+00:00",
+  "results": {
+    "A": {
+      "result": {
+        "status": "SAT",
+        "solve_ms": 837.29,
+        "spec_hash": "c90d81dfa5afa7b40b733bab03a64ad5e3daed85610976914b86434345c89f1c",
+        "schedule_by_staff": {
+          "asha": [
+            "D",
+            "-",
+            "E",
+            "-",
+            "D",
+            "D",
+            "D",
+            "D",
+            "-",
+            "-",
+            "E",
+            "-",
+            "D",
+            "E"
+          ],
+          "bala": [
+            "-",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D",
+            "-",
+            "-",
+            "D",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D"
+          ],
+          "chitra": [
+            "N",
+            "N",
+            "-",
+            "-",
+            "-",
+            "-",
+            "N",
+            "-",
+            "-",
+            "D",
+            "D",
+            "-",
+            "D",
+            "E"
+          ],
+          "dev": [
+            "-",
+            "E",
+            "N",
+            "-",
+            "D",
+            "E",
+            "E",
+            "-",
+            "-",
+            "E",
+            "E",
+            "E",
+            "E",
+            "N"
+          ],
+          "esha": [
+            "D",
+            "D",
+            "N",
+            "-",
+            "E",
+            "-",
+            "-",
+            "N",
+            "-",
+            "-",
+            "-",
+            "N",
+            "-",
+            "D"
+          ],
+          "farid": [
+            "E",
+            "-",
+            "-",
+            "E",
+            "-",
+            "-",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D",
+            "E",
+            "-",
+            "E"
+          ],
+          "gita": [
+            "-",
+            "-",
+            "D",
+            "D",
+            "N",
+            "N",
+            "-",
+            "-",
+            "N",
+            "N",
+            "-",
+            "D",
+            "E",
+            "E"
+          ],
+          "hari": [
+            "E",
+            "-",
+            "-",
+            "N",
+            "N",
+            "-",
+            "-",
+            "E",
+            "E",
+            "N",
+            "N",
+            "-",
+            "N",
+            "-"
+          ]
+        }
+      },
+      "checker": {
+        "valid": true,
+        "format_errors": [],
+        "violations": [],
+        "violation_count": 0,
+        "format_error_count": 0,
+        "normalized_roster": {
+          "asha": [
+            "D",
+            "-",
+            "E",
+            "-",
+            "D",
+            "D",
+            "D",
+            "D",
+            "-",
+            "-",
+            "E",
+            "-",
+            "D",
+            "E"
+          ],
+          "bala": [
+            "-",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D",
+            "-",
+            "-",
+            "D",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D"
+          ],
+          "chitra": [
+            "N",
+            "N",
+            "-",
+            "-",
+            "-",
+            "-",
+            "N",
+            "-",
+            "-",
+            "D",
+            "D",
+            "-",
+            "D",
+            "E"
+          ],
+          "dev": [
+            "-",
+            "E",
+            "N",
+            "-",
+            "D",
+            "E",
+            "E",
+            "-",
+            "-",
+            "E",
+            "E",
+            "E",
+            "E",
+            "N"
+          ],
+          "esha": [
+            "D",
+            "D",
+            "N",
+            "-",
+            "E",
+            "-",
+            "-",
+            "N",
+            "-",
+            "-",
+            "-",
+            "N",
+            "-",
+            "D"
+          ],
+          "farid": [
+            "E",
+            "-",
+            "-",
+            "E",
+            "-",
+            "-",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D",
+            "E",
+            "-",
+            "E"
+          ],
+          "gita": [
+            "-",
+            "-",
+            "D",
+            "D",
+            "N",
+            "N",
+            "-",
+            "-",
+            "N",
+            "N",
+            "-",
+            "D",
+            "E",
+            "E"
+          ],
+          "hari": [
+            "E",
+            "-",
+            "-",
+            "N",
+            "N",
+            "-",
+            "-",
+            "E",
+            "E",
+            "N",
+            "N",
+            "-",
+            "N",
+            "-"
+          ]
+        },
+        "evidence": [
+          {
+            "rule_id": "R1",
+            "text": "At least 2 staff on D every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R2",
+            "text": "At least 1 staff on E every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R3",
+            "text": "At least 1 nurse on N every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R4",
+            "text": "At least 1 doctor on D every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R5",
+            "text": "At least 11 hours rest between consecutive-day shifts.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R6",
+            "text": "At most 5 consecutive working days per person.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R7",
+            "text": "At most 5 shifts in every rolling 7-day window per person.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R8",
+            "text": "Chitra unavailable on days 3, 4, 5 (zero-based).",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R9",
+            "text": "Everyone works at least 6 shifts in total.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R10",
+            "text": "Farid works no night shifts.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R8b",
+            "text": "Esha unavailable on days 9, 10 (zero-based).",
+            "passed": true,
+            "violation_count": 0
+          }
+        ],
+        "assumption": {
+          "text": "At most one shift per person per day",
+          "passed": true
+        }
+      }
+    },
+    "B": {
+      "result": {
+        "status": "UNSAT",
+        "solve_ms": 2955.62,
+        "spec_hash": "62414896cbd171573435d99b8f5ca5b8c064fe460f6fdade1990ff99e668e1bf",
+        "conflict": {
+          "rule_ids": [
+            "R3",
+            "R10",
+            "R11"
+          ],
+          "rules": [
+            {
+              "id": "R3",
+              "text": "At least 2 nurses on N every day."
+            },
+            {
+              "id": "R10",
+              "text": "Farid works no night shifts."
+            },
+            {
+              "id": "R11",
+              "text": "At most 5 night shifts per person over the horizon."
+            }
+          ],
+          "minimal": true,
+          "relaxation": [
+            {
+              "rule_id": "R3",
+              "feasible_if_removed": true,
+              "status": "SAT"
+            },
+            {
+              "rule_id": "R10",
+              "feasible_if_removed": true,
+              "status": "SAT"
+            },
+            {
+              "rule_id": "R11",
+              "feasible_if_removed": true,
+              "status": "SAT"
+            }
+          ]
+        }
+      },
+      "checker": null
+    },
+    "C": {
+      "result": {
+        "status": "SAT",
+        "solve_ms": 786.68,
+        "spec_hash": "316eaeae5404f4a6880b12ab74dace8364f57f05514b3a3f1f3c97635640ff6b",
+        "schedule_by_staff": {
+          "asha": [
+            "D",
+            "D",
+            "-",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D",
+            "D",
+            "-",
+            "D",
+            "-",
+            "D",
+            "D"
+          ],
+          "bala": [
+            "E",
+            "-",
+            "D",
+            "E",
+            "E",
+            "-",
+            "D",
+            "E",
+            "-",
+            "D",
+            "-",
+            "D",
+            "N",
+            "-"
+          ],
+          "chitra": [
+            "D",
+            "N",
+            "N",
+            "-",
+            "-",
+            "-",
+            "-",
+            "N",
+            "N",
+            "N",
+            "N",
+            "-",
+            "-",
+            "E"
+          ],
+          "dev": [
+            "-",
+            "D",
+            "E",
+            "-",
+            "D",
+            "D",
+            "N",
+            "-",
+            "E",
+            "-",
+            "N",
+            "N",
+            "N",
+            "N"
+          ],
+          "esha": [
+            "E",
+            "E",
+            "-",
+            "N",
+            "N",
+            "-",
+            "D",
+            "N",
+            "N",
+            "-",
+            "-",
+            "E",
+            "N",
+            "-"
+          ],
+          "farid": [
+            "-",
+            "-",
+            "D",
+            "D",
+            "D",
+            "E",
+            "E",
+            "-",
+            "-",
+            "D",
+            "D",
+            "-",
+            "D",
+            "D"
+          ],
+          "gita": [
+            "N",
+            "-",
+            "N",
+            "-",
+            "-",
+            "N",
+            "N",
+            "-",
+            "D",
+            "N",
+            "-",
+            "D",
+            "E",
+            "N"
+          ],
+          "hari": [
+            "N",
+            "N",
+            "-",
+            "N",
+            "N",
+            "N",
+            "-",
+            "D",
+            "-",
+            "E",
+            "E",
+            "N",
+            "-",
+            "-"
+          ]
+        }
+      },
+      "checker": {
+        "valid": true,
+        "format_errors": [],
+        "violations": [],
+        "violation_count": 0,
+        "format_error_count": 0,
+        "normalized_roster": {
+          "asha": [
+            "D",
+            "D",
+            "-",
+            "D",
+            "D",
+            "D",
+            "-",
+            "D",
+            "D",
+            "-",
+            "D",
+            "-",
+            "D",
+            "D"
+          ],
+          "bala": [
+            "E",
+            "-",
+            "D",
+            "E",
+            "E",
+            "-",
+            "D",
+            "E",
+            "-",
+            "D",
+            "-",
+            "D",
+            "N",
+            "-"
+          ],
+          "chitra": [
+            "D",
+            "N",
+            "N",
+            "-",
+            "-",
+            "-",
+            "-",
+            "N",
+            "N",
+            "N",
+            "N",
+            "-",
+            "-",
+            "E"
+          ],
+          "dev": [
+            "-",
+            "D",
+            "E",
+            "-",
+            "D",
+            "D",
+            "N",
+            "-",
+            "E",
+            "-",
+            "N",
+            "N",
+            "N",
+            "N"
+          ],
+          "esha": [
+            "E",
+            "E",
+            "-",
+            "N",
+            "N",
+            "-",
+            "D",
+            "N",
+            "N",
+            "-",
+            "-",
+            "E",
+            "N",
+            "-"
+          ],
+          "farid": [
+            "-",
+            "-",
+            "D",
+            "D",
+            "D",
+            "E",
+            "E",
+            "-",
+            "-",
+            "D",
+            "D",
+            "-",
+            "D",
+            "D"
+          ],
+          "gita": [
+            "N",
+            "-",
+            "N",
+            "-",
+            "-",
+            "N",
+            "N",
+            "-",
+            "D",
+            "N",
+            "-",
+            "D",
+            "E",
+            "N"
+          ],
+          "hari": [
+            "N",
+            "N",
+            "-",
+            "N",
+            "N",
+            "N",
+            "-",
+            "D",
+            "-",
+            "E",
+            "E",
+            "N",
+            "-",
+            "-"
+          ]
+        },
+        "evidence": [
+          {
+            "rule_id": "R1",
+            "text": "At least 2 staff on D every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R2",
+            "text": "At least 1 staff on E every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R3",
+            "text": "At least 2 nurses on N every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R4",
+            "text": "At least 1 doctor on D every day.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R5",
+            "text": "At least 11 hours rest between consecutive-day shifts.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R6",
+            "text": "At most 5 consecutive working days per person.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R7",
+            "text": "At most 5 shifts in every rolling 7-day window per person.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R8",
+            "text": "Chitra unavailable on days 3, 4, 5 (zero-based).",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R9",
+            "text": "Everyone works at least 6 shifts in total.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R10",
+            "text": "Farid works no night shifts.",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R8b",
+            "text": "Esha unavailable on days 9, 10 (zero-based).",
+            "passed": true,
+            "violation_count": 0
+          },
+          {
+            "rule_id": "R11",
+            "text": "At most 6 night shifts per person over the horizon.",
+            "passed": true,
+            "violation_count": 0
+          }
+        ],
+        "assumption": {
+          "text": "At most one shift per person per day",
+          "passed": true
+        }
+      }
+    }
+  }
+}

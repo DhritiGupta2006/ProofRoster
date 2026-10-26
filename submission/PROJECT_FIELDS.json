@@ -1,0 +1,19 @@
+{
+  "title": "ProofRoster \u2014 From Plausible Rosters to Checked Decisions",
+  "short_description": "One new Lambda solver tool upgrades a Strands agent with independently checked schedules, real conflict explanations and a repair loop.",
+  "built_with": [
+    "Amazon Bedrock",
+    "Amazon Nova Pro",
+    "Strands Agents SDK",
+    "AWS Lambda",
+    "Z3",
+    "FastAPI"
+  ],
+  "demo_url": null,
+  "source_url": null,
+  "demo_file": "submission/ProofRoster-demo.webm",
+  "demo_duration_seconds": 99,
+  "demo_type": "Captioned real AWS replay; no audio narration",
+  "benchmark_status": "COMPLETE",
+  "published": false
+}

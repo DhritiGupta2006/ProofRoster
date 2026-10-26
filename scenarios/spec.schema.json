@@ -1,0 +1,495 @@
+{
+  "type": "object",
+  "properties": {
+    "horizon_days": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 31
+    },
+    "shifts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "D",
+              "E",
+              "N"
+            ]
+          },
+          "start_hour": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 23
+          },
+          "duration_h": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 24
+          }
+        },
+        "required": [
+          "code",
+          "start_hour",
+          "duration_h"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "staff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "doctor",
+                "nurse"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "skills"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 20,
+      "uniqueItems": true
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "const": "COVERAGE"
+              },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "shift": {
+                    "type": "string",
+                    "enum": [
+                      "D",
+                      "E",
+                      "N"
+                    ]
+                  },
+                  "days": {
+                    "oneOf": [
+                      {
+                        "const": "ALL"
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 30
+                        },
+                        "minItems": 1,
+                        "maxItems": 31,
+                        "uniqueItems": true
+                      }
+                    ]
+                  },
+                  "skill": {
+                    "type": "string",
+                    "enum": [
+                      "doctor",
+                      "nurse"
+                    ]
+                  },
+                  "min": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 744
+                  }
+                },
+                "required": [
+                  "shift",
+                  "days",
+                  "min"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "type",
+              "params"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "const": "MIN_REST_HOURS"
+              },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "hours": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 744
+                  }
+                },
+                "required": [
+                  "hours"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "type",
+              "params"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "const": "MAX_CONSECUTIVE_DAYS"
+              },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "max": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 744
+                  }
+                },
+                "required": [
+                  "max"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "type",
+              "params"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "const": "MAX_SHIFTS_IN_WINDOW"
+              },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "window_days": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 31
+                  },
+                  "max": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 744
+                  }
+                },
+                "required": [
+                  "window_days",
+                  "max"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "type",
+              "params"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "const": "MAX_SHIFT_TYPE_COUNT"
+              },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "shift": {
+                    "type": "string",
+                    "enum": [
+                      "D",
+                      "E",
+                      "N"
+                    ]
+                  },
+                  "max": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 744
+                  },
+                  "staff": {
+                    "oneOf": [
+                      {
+                        "const": "ALL"
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "minItems": 1,
+                        "maxItems": 31,
+                        "uniqueItems": true
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "shift",
+                  "max",
+                  "staff"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "type",
+              "params"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "const": "UNAVAILABLE"
+              },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "staff": {
+                    "oneOf": [
+                      {
+                        "const": "ALL"
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "minItems": 1,
+                        "maxItems": 31,
+                        "uniqueItems": true
+                      }
+                    ]
+                  },
+                  "days": {
+                    "oneOf": [
+                      {
+                        "const": "ALL"
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 30
+                        },
+                        "minItems": 1,
+                        "maxItems": 31,
+                        "uniqueItems": true
+                      }
+                    ]
+                  },
+                  "shifts": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "D",
+                        "E",
+                        "N"
+                      ]
+                    },
+                    "minItems": 1,
+                    "maxItems": 3,
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "staff",
+                  "days"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "type",
+              "params"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "const": "MIN_SHIFTS_TOTAL"
+              },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "min": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 744
+                  },
+                  "staff": {
+                    "oneOf": [
+                      {
+                        "const": "ALL"
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80
+                        },
+                        "minItems": 1,
+                        "maxItems": 31,
+                        "uniqueItems": true
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "min",
+                  "staff"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "type",
+              "params"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 60,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "horizon_days",
+    "shifts",
+    "staff",
+    "rules"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

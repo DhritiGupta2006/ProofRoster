@@ -1,0 +1,16 @@
+Create a clinic roster. Day 0 is Monday. Horizon: 14 days.
+At most one shift per person per day. Off is -. Shifts: [{"code": "D", "start_hour": 7, "duration_h": 8}, {"code": "E", "start_hour": 15, "duration_h": 8}, {"code": "N", "start_hour": 23, "duration_h": 8}]
+Staff IDs, names and skills: [{"id": "asha", "name": "Asha", "skills": ["doctor"]}, {"id": "bala", "name": "Bala", "skills": ["doctor"]}, {"id": "chitra", "name": "Chitra", "skills": ["nurse"]}, {"id": "dev", "name": "Dev", "skills": ["nurse"]}, {"id": "esha", "name": "Esha", "skills": ["nurse"]}, {"id": "farid", "name": "Farid", "skills": ["nurse"]}, {"id": "gita", "name": "Gita", "skills": ["nurse"]}, {"id": "hari", "name": "Hari", "skills": ["nurse"]}]
+Preserve the following rule IDs and original text. Day numbers are zero-based.
+R1: At least 2 staff on D every day.
+R2: At least 1 staff on E every day.
+R3: At least 2 nurses on N every day.
+R4: At least 1 doctor on D every day.
+R5: At least 11 hours rest between consecutive-day shifts.
+R6: At most 5 consecutive working days per person.
+R7: At most 5 shifts in every rolling 7-day window per person.
+R8: Chitra unavailable on days 3, 4, 5 (zero-based).
+R9: Everyone works at least 6 shifts in total.
+R10: Farid works no night shifts.
+R8b: Esha unavailable on days 9, 10 (zero-based).
+R11: At most 6 night shifts per person over the horizon.

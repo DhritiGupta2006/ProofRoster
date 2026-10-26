@@ -1,0 +1,4 @@
+scenario,attempted,baseline_valid,tool_verified_sat,tool_faithful_unsat,tool_errors,fidelity_matches
+A,10,0,10,0,0,10
+B,10,0,0,10,0,10
+C,10,0,10,0,0,10

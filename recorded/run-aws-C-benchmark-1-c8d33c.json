@@ -1,0 +1,2026 @@
+{
+  "scenario": "C",
+  "run": 1,
+  "timestamp": "2026-10-26T19:16:36.995903+00:00",
+  "baseline": {
+    "source": "Bedrock / Strands, no tools",
+    "text": "Certainly! Here's the roster as a fenced JSON object mapping each staff ID to a list of shift codes:\n\n```json\n{\n  \"asha\": [\"D\", \"D\", \"D\", \"E\", \"D\", \"D\", \"-\", \"E\", \"D\", \"D\", \"-\", \"D\", \"D\", \"-\"],\n  \"bala\": [\"D\", \"D\", \"E\", \"D\", \"D\", \"-\", \"D\", \"D\", \"D\", \"E\", \"D\", \"-\", \"D\", \"-\"],\n  \"chitra\": [\"D\", \"D\", \"-\", \"-\", \"-\", \"N\", \"N\", \"N\", \"D\", \"D\", \"N\", \"N\", \"N\", \"D\"],\n  \"dev\": [\"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"-\", \"D\", \"N\", \"N\", \"N\", \"N\", \"N\", \"-\"],\n  \"esha\": [\"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"-\", \"-\", \"N\", \"N\", \"N\", \"N\"],\n  \"farid\": [\"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\", \"E\"],\n  \"gita\": [\"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\"],\n  \"hari\": [\"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\", \"N\"]\n}\n```\n",
+    "roster": {
+      "asha": [
+        "D",
+        "D",
+        "D",
+        "E",
+        "D",
+        "D",
+        "-",
+        "E",
+        "D",
+        "D",
+        "-",
+        "D",
+        "D",
+        "-"
+      ],
+      "bala": [
+        "D",
+        "D",
+        "E",
+        "D",
+        "D",
+        "-",
+        "D",
+        "D",
+        "D",
+        "E",
+        "D",
+        "-",
+        "D",
+        "-"
+      ],
+      "chitra": [
+        "D",
+        "D",
+        "-",
+        "-",
+        "-",
+        "N",
+        "N",
+        "N",
+        "D",
+        "D",
+        "N",
+        "N",
+        "N",
+        "D"
+      ],
+      "dev": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "-",
+        "D",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "-"
+      ],
+      "esha": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "-",
+        "-",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "farid": [
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E"
+      ],
+      "gita": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "hari": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ]
+    },
+    "checker": {
+      "valid": false,
+      "format_errors": [],
+      "violations": [
+        {
+          "rule_id": "R1",
+          "staff": null,
+          "day": 2,
+          "shift": "D",
+          "message": "Day 2: 1 eligible staff; requires 2"
+        },
+        {
+          "rule_id": "R1",
+          "staff": null,
+          "day": 3,
+          "shift": "D",
+          "message": "Day 3: 1 eligible staff; requires 2"
+        },
+        {
+          "rule_id": "R1",
+          "staff": null,
+          "day": 5,
+          "shift": "D",
+          "message": "Day 5: 1 eligible staff; requires 2"
+        },
+        {
+          "rule_id": "R1",
+          "staff": null,
+          "day": 6,
+          "shift": "D",
+          "message": "Day 6: 1 eligible staff; requires 2"
+        },
+        {
+          "rule_id": "R1",
+          "staff": null,
+          "day": 10,
+          "shift": "D",
+          "message": "Day 10: 1 eligible staff; requires 2"
+        },
+        {
+          "rule_id": "R1",
+          "staff": null,
+          "day": 11,
+          "shift": "D",
+          "message": "Day 11: 1 eligible staff; requires 2"
+        },
+        {
+          "rule_id": "R1",
+          "staff": null,
+          "day": 13,
+          "shift": "D",
+          "message": "Day 13: 1 eligible staff; requires 2"
+        },
+        {
+          "rule_id": "R4",
+          "staff": null,
+          "day": 13,
+          "shift": "D",
+          "message": "Day 13: 0 eligible staff; requires 1"
+        },
+        {
+          "rule_id": "R5",
+          "staff": "asha",
+          "day": 4,
+          "shift": "D",
+          "message": "8h rest; requires 11h"
+        },
+        {
+          "rule_id": "R5",
+          "staff": "asha",
+          "day": 8,
+          "shift": "D",
+          "message": "8h rest; requires 11h"
+        },
+        {
+          "rule_id": "R5",
+          "staff": "bala",
+          "day": 3,
+          "shift": "D",
+          "message": "8h rest; requires 11h"
+        },
+        {
+          "rule_id": "R5",
+          "staff": "bala",
+          "day": 10,
+          "shift": "D",
+          "message": "8h rest; requires 11h"
+        },
+        {
+          "rule_id": "R5",
+          "staff": "chitra",
+          "day": 8,
+          "shift": "D",
+          "message": "0h rest; requires 11h"
+        },
+        {
+          "rule_id": "R5",
+          "staff": "chitra",
+          "day": 13,
+          "shift": "D",
+          "message": "0h rest; requires 11h"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "asha",
+          "day": 5,
+          "shift": "D",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "chitra",
+          "day": 10,
+          "shift": "N",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "chitra",
+          "day": 11,
+          "shift": "N",
+          "message": "7 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "chitra",
+          "day": 12,
+          "shift": "N",
+          "message": "8 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "chitra",
+          "day": 13,
+          "shift": "D",
+          "message": "9 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "dev",
+          "day": 5,
+          "shift": "N",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "dev",
+          "day": 12,
+          "shift": "N",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "esha",
+          "day": 5,
+          "shift": "N",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "esha",
+          "day": 6,
+          "shift": "N",
+          "message": "7 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "esha",
+          "day": 7,
+          "shift": "N",
+          "message": "8 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 5,
+          "shift": "E",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 6,
+          "shift": "E",
+          "message": "7 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 7,
+          "shift": "E",
+          "message": "8 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 8,
+          "shift": "E",
+          "message": "9 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 9,
+          "shift": "E",
+          "message": "10 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 10,
+          "shift": "E",
+          "message": "11 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 11,
+          "shift": "E",
+          "message": "12 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 12,
+          "shift": "E",
+          "message": "13 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "farid",
+          "day": 13,
+          "shift": "E",
+          "message": "14 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 5,
+          "shift": "N",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 6,
+          "shift": "N",
+          "message": "7 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 7,
+          "shift": "N",
+          "message": "8 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 8,
+          "shift": "N",
+          "message": "9 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 9,
+          "shift": "N",
+          "message": "10 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 10,
+          "shift": "N",
+          "message": "11 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 11,
+          "shift": "N",
+          "message": "12 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 12,
+          "shift": "N",
+          "message": "13 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "gita",
+          "day": 13,
+          "shift": "N",
+          "message": "14 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 5,
+          "shift": "N",
+          "message": "6 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 6,
+          "shift": "N",
+          "message": "7 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 7,
+          "shift": "N",
+          "message": "8 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 8,
+          "shift": "N",
+          "message": "9 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 9,
+          "shift": "N",
+          "message": "10 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 10,
+          "shift": "N",
+          "message": "11 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 11,
+          "shift": "N",
+          "message": "12 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 12,
+          "shift": "N",
+          "message": "13 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R6",
+          "staff": "hari",
+          "day": 13,
+          "shift": "N",
+          "message": "14 consecutive work days; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "asha",
+          "day": 0,
+          "shift": null,
+          "message": "Days 0-6: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "asha",
+          "day": 1,
+          "shift": null,
+          "message": "Days 1-7: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "asha",
+          "day": 2,
+          "shift": null,
+          "message": "Days 2-8: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "asha",
+          "day": 3,
+          "shift": null,
+          "message": "Days 3-9: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "bala",
+          "day": 0,
+          "shift": null,
+          "message": "Days 0-6: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "bala",
+          "day": 1,
+          "shift": null,
+          "message": "Days 1-7: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "bala",
+          "day": 2,
+          "shift": null,
+          "message": "Days 2-8: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "bala",
+          "day": 3,
+          "shift": null,
+          "message": "Days 3-9: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "bala",
+          "day": 4,
+          "shift": null,
+          "message": "Days 4-10: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "bala",
+          "day": 6,
+          "shift": null,
+          "message": "Days 6-12: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "chitra",
+          "day": 4,
+          "shift": null,
+          "message": "Days 4-10: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "chitra",
+          "day": 5,
+          "shift": null,
+          "message": "Days 5-11: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "chitra",
+          "day": 6,
+          "shift": null,
+          "message": "Days 6-12: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "chitra",
+          "day": 7,
+          "shift": null,
+          "message": "Days 7-13: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 0,
+          "shift": null,
+          "message": "Days 0-6: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 1,
+          "shift": null,
+          "message": "Days 1-7: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 2,
+          "shift": null,
+          "message": "Days 2-8: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 3,
+          "shift": null,
+          "message": "Days 3-9: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 4,
+          "shift": null,
+          "message": "Days 4-10: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 5,
+          "shift": null,
+          "message": "Days 5-11: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 6,
+          "shift": null,
+          "message": "Days 6-12: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "dev",
+          "day": 7,
+          "shift": null,
+          "message": "Days 7-13: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "esha",
+          "day": 0,
+          "shift": null,
+          "message": "Days 0-6: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "esha",
+          "day": 1,
+          "shift": null,
+          "message": "Days 1-7: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "esha",
+          "day": 2,
+          "shift": null,
+          "message": "Days 2-8: 6 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 0,
+          "shift": null,
+          "message": "Days 0-6: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 1,
+          "shift": null,
+          "message": "Days 1-7: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 2,
+          "shift": null,
+          "message": "Days 2-8: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 3,
+          "shift": null,
+          "message": "Days 3-9: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 4,
+          "shift": null,
+          "message": "Days 4-10: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 5,
+          "shift": null,
+          "message": "Days 5-11: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 6,
+          "shift": null,
+          "message": "Days 6-12: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "farid",
+          "day": 7,
+          "shift": null,
+          "message": "Days 7-13: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 0,
+          "shift": null,
+          "message": "Days 0-6: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 1,
+          "shift": null,
+          "message": "Days 1-7: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 2,
+          "shift": null,
+          "message": "Days 2-8: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 3,
+          "shift": null,
+          "message": "Days 3-9: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 4,
+          "shift": null,
+          "message": "Days 4-10: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 5,
+          "shift": null,
+          "message": "Days 5-11: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 6,
+          "shift": null,
+          "message": "Days 6-12: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "gita",
+          "day": 7,
+          "shift": null,
+          "message": "Days 7-13: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 0,
+          "shift": null,
+          "message": "Days 0-6: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 1,
+          "shift": null,
+          "message": "Days 1-7: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 2,
+          "shift": null,
+          "message": "Days 2-8: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 3,
+          "shift": null,
+          "message": "Days 3-9: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 4,
+          "shift": null,
+          "message": "Days 4-10: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 5,
+          "shift": null,
+          "message": "Days 5-11: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 6,
+          "shift": null,
+          "message": "Days 6-12: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R7",
+          "staff": "hari",
+          "day": 7,
+          "shift": null,
+          "message": "Days 7-13: 7 shifts; cap 5"
+        },
+        {
+          "rule_id": "R8",
+          "staff": "chitra",
+          "day": 5,
+          "shift": "N",
+          "message": "Assigned during unavailability"
+        },
+        {
+          "rule_id": "R8b",
+          "staff": "esha",
+          "day": 10,
+          "shift": "N",
+          "message": "Assigned during unavailability"
+        },
+        {
+          "rule_id": "R11",
+          "staff": "dev",
+          "day": null,
+          "shift": "N",
+          "message": "11 N shifts; cap 6"
+        },
+        {
+          "rule_id": "R11",
+          "staff": "esha",
+          "day": null,
+          "shift": "N",
+          "message": "12 N shifts; cap 6"
+        },
+        {
+          "rule_id": "R11",
+          "staff": "gita",
+          "day": null,
+          "shift": "N",
+          "message": "14 N shifts; cap 6"
+        },
+        {
+          "rule_id": "R11",
+          "staff": "hari",
+          "day": null,
+          "shift": "N",
+          "message": "14 N shifts; cap 6"
+        }
+      ],
+      "violation_count": 106,
+      "format_error_count": 0,
+      "normalized_roster": {
+        "asha": [
+          "D",
+          "D",
+          "D",
+          "E",
+          "D",
+          "D",
+          "-",
+          "E",
+          "D",
+          "D",
+          "-",
+          "D",
+          "D",
+          "-"
+        ],
+        "bala": [
+          "D",
+          "D",
+          "E",
+          "D",
+          "D",
+          "-",
+          "D",
+          "D",
+          "D",
+          "E",
+          "D",
+          "-",
+          "D",
+          "-"
+        ],
+        "chitra": [
+          "D",
+          "D",
+          "-",
+          "-",
+          "-",
+          "N",
+          "N",
+          "N",
+          "D",
+          "D",
+          "N",
+          "N",
+          "N",
+          "D"
+        ],
+        "dev": [
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "-",
+          "D",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "-"
+        ],
+        "esha": [
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "-",
+          "-",
+          "N",
+          "N",
+          "N",
+          "N"
+        ],
+        "farid": [
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E",
+          "E"
+        ],
+        "gita": [
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N"
+        ],
+        "hari": [
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N",
+          "N"
+        ]
+      },
+      "evidence": [
+        {
+          "rule_id": "R1",
+          "text": "At least 2 staff on D every day.",
+          "passed": false,
+          "violation_count": 7
+        },
+        {
+          "rule_id": "R2",
+          "text": "At least 1 staff on E every day.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R3",
+          "text": "At least 2 nurses on N every day.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R4",
+          "text": "At least 1 doctor on D every day.",
+          "passed": false,
+          "violation_count": 1
+        },
+        {
+          "rule_id": "R5",
+          "text": "At least 11 hours rest between consecutive-day shifts.",
+          "passed": false,
+          "violation_count": 6
+        },
+        {
+          "rule_id": "R6",
+          "text": "At most 5 consecutive working days per person.",
+          "passed": false,
+          "violation_count": 37
+        },
+        {
+          "rule_id": "R7",
+          "text": "At most 5 shifts in every rolling 7-day window per person.",
+          "passed": false,
+          "violation_count": 49
+        },
+        {
+          "rule_id": "R8",
+          "text": "Chitra unavailable on days 3, 4, 5 (zero-based).",
+          "passed": false,
+          "violation_count": 1
+        },
+        {
+          "rule_id": "R9",
+          "text": "Everyone works at least 6 shifts in total.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R10",
+          "text": "Farid works no night shifts.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R8b",
+          "text": "Esha unavailable on days 9, 10 (zero-based).",
+          "passed": false,
+          "violation_count": 1
+        },
+        {
+          "rule_id": "R11",
+          "text": "At most 6 night shifts per person over the horizon.",
+          "passed": false,
+          "violation_count": 4
+        }
+      ],
+      "assumption": {
+        "text": "At most one shift per person per day",
+        "passed": true
+      }
+    },
+    "retries": 1,
+    "elapsed_ms": 15266
+  },
+  "proof": {
+    "source": "Bedrock / Strands + private Lambda",
+    "text": "The roster satisfies all stated rules, independently verified. Here is the schedule by staff:\n\n- Asha: [\"E\", \"-\", \"D\", \"D\", \"D\", \"D\", \"-\", \"-\", \"D\", \"D\", \"E\", \"-\", \"D\", \"D\"]\n- Bala: [\"D\", \"D\", \"D\", \"-\", \"D\", \"-\", \"D\", \"D\", \"D\", \"-\", \"D\", \"D\", \"-\", \"D\"]\n- Chitra: [\"N\", \"-\", \"E\", \"-\", \"-\", \"-\", \"E\", \"N\", \"N\", \"-\", \"N\", \"N\", \"-\", \"E\"]\n- Dev: [\"N\", \"-\", \"N\", \"-\", \"N\", \"N\", \"-\", \"E\", \"-\", \"N\", \"-\", \"-\", \"E\", \"N\"]\n- Esha: [\"D\", \"N\", \"-\", \"N\", \"-\", \"D\", \"N\", \"N\", \"-\", \"-\", \"-\", \"N\", \"N\", \"-\"]\n- Farid: [\"-\", \"E\", \"-\", \"E\", \"E\", \"E\", \"-\", \"D\", \"-\", \"D\", \"D\", \"D\", \"D\", \"-\"]\n- Gita: [\"-\", \"N\", \"N\", \"N\", \"N\", \"-\", \"D\", \"-\", \"E\", \"E\", \"N\", \"-\", \"E\", \"N\"]\n- Hari: [\"D\", \"D\", \"-\", \"D\", \"-\", \"N\", \"N\", \"-\", \"N\", \"N\", \"-\", \"E\", \"N\", \"-\"]\n\nAll rules (R1 to R11) are met.\n",
+    "result": {
+      "status": "SAT",
+      "solve_ms": 838.49,
+      "spec_hash": "316eaeae5404f4a6880b12ab74dace8364f57f05514b3a3f1f3c97635640ff6b",
+      "schedule_by_staff": {
+        "asha": [
+          "E",
+          "-",
+          "D",
+          "D",
+          "D",
+          "D",
+          "-",
+          "-",
+          "D",
+          "D",
+          "E",
+          "-",
+          "D",
+          "D"
+        ],
+        "bala": [
+          "D",
+          "D",
+          "D",
+          "-",
+          "D",
+          "-",
+          "D",
+          "D",
+          "D",
+          "-",
+          "D",
+          "D",
+          "-",
+          "D"
+        ],
+        "chitra": [
+          "N",
+          "-",
+          "E",
+          "-",
+          "-",
+          "-",
+          "E",
+          "N",
+          "N",
+          "-",
+          "N",
+          "N",
+          "-",
+          "E"
+        ],
+        "dev": [
+          "N",
+          "-",
+          "N",
+          "-",
+          "N",
+          "N",
+          "-",
+          "E",
+          "-",
+          "N",
+          "-",
+          "-",
+          "E",
+          "N"
+        ],
+        "esha": [
+          "D",
+          "N",
+          "-",
+          "N",
+          "-",
+          "D",
+          "N",
+          "N",
+          "-",
+          "-",
+          "-",
+          "N",
+          "N",
+          "-"
+        ],
+        "farid": [
+          "-",
+          "E",
+          "-",
+          "E",
+          "E",
+          "E",
+          "-",
+          "D",
+          "-",
+          "D",
+          "D",
+          "D",
+          "D",
+          "-"
+        ],
+        "gita": [
+          "-",
+          "N",
+          "N",
+          "N",
+          "N",
+          "-",
+          "D",
+          "-",
+          "E",
+          "E",
+          "N",
+          "-",
+          "E",
+          "N"
+        ],
+        "hari": [
+          "D",
+          "D",
+          "-",
+          "D",
+          "-",
+          "N",
+          "N",
+          "-",
+          "N",
+          "N",
+          "-",
+          "E",
+          "N",
+          "-"
+        ]
+      }
+    },
+    "traces": [
+      {
+        "input": {
+          "horizon_days": 14,
+          "shifts": [
+            {
+              "code": "D",
+              "start_hour": 7,
+              "duration_h": 8
+            },
+            {
+              "code": "E",
+              "start_hour": 15,
+              "duration_h": 8
+            },
+            {
+              "code": "N",
+              "start_hour": 23,
+              "duration_h": 8
+            }
+          ],
+          "staff": [
+            {
+              "id": "asha",
+              "name": "Asha",
+              "skills": [
+                "doctor"
+              ]
+            },
+            {
+              "id": "bala",
+              "name": "Bala",
+              "skills": [
+                "doctor"
+              ]
+            },
+            {
+              "id": "chitra",
+              "name": "Chitra",
+              "skills": [
+                "nurse"
+              ]
+            },
+            {
+              "id": "dev",
+              "name": "Dev",
+              "skills": [
+                "nurse"
+              ]
+            },
+            {
+              "id": "esha",
+              "name": "Esha",
+              "skills": [
+                "nurse"
+              ]
+            },
+            {
+              "id": "farid",
+              "name": "Farid",
+              "skills": [
+                "nurse"
+              ]
+            },
+            {
+              "id": "gita",
+              "name": "Gita",
+              "skills": [
+                "nurse"
+              ]
+            },
+            {
+              "id": "hari",
+              "name": "Hari",
+              "skills": [
+                "nurse"
+              ]
+            }
+          ],
+          "rules": [
+            {
+              "id": "R1",
+              "text": "At least 2 staff on D every day.",
+              "type": "COVERAGE",
+              "params": {
+                "days": "ALL",
+                "min": 2,
+                "shift": "D"
+              }
+            },
+            {
+              "id": "R2",
+              "text": "At least 1 staff on E every day.",
+              "type": "COVERAGE",
+              "params": {
+                "days": "ALL",
+                "min": 1,
+                "shift": "E"
+              }
+            },
+            {
+              "id": "R3",
+              "text": "At least 2 nurses on N every day.",
+              "type": "COVERAGE",
+              "params": {
+                "days": "ALL",
+                "min": 2,
+                "shift": "N",
+                "skill": "nurse"
+              }
+            },
+            {
+              "id": "R4",
+              "text": "At least 1 doctor on D every day.",
+              "type": "COVERAGE",
+              "params": {
+                "days": "ALL",
+                "min": 1,
+                "shift": "D",
+                "skill": "doctor"
+              }
+            },
+            {
+              "id": "R5",
+              "text": "At least 11 hours rest between consecutive-day shifts.",
+              "type": "MIN_REST_HOURS",
+              "params": {
+                "hours": 11
+              }
+            },
+            {
+              "id": "R6",
+              "text": "At most 5 consecutive working days per person.",
+              "type": "MAX_CONSECUTIVE_DAYS",
+              "params": {
+                "max": 5
+              }
+            },
+            {
+              "id": "R7",
+              "text": "At most 5 shifts in every rolling 7-day window per person.",
+              "type": "MAX_SHIFTS_IN_WINDOW",
+              "params": {
+                "max": 5,
+                "window_days": 7
+              }
+            },
+            {
+              "id": "R8",
+              "text": "Chitra unavailable on days 3, 4, 5 (zero-based).",
+              "type": "UNAVAILABLE",
+              "params": {
+                "days": [
+                  3,
+                  4,
+                  5
+                ],
+                "staff": [
+                  "chitra"
+                ]
+              }
+            },
+            {
+              "id": "R9",
+              "text": "Everyone works at least 6 shifts in total.",
+              "type": "MIN_SHIFTS_TOTAL",
+              "params": {
+                "min": 6,
+                "staff": "ALL"
+              }
+            },
+            {
+              "id": "R10",
+              "text": "Farid works no night shifts.",
+              "type": "MAX_SHIFT_TYPE_COUNT",
+              "params": {
+                "max": 0,
+                "shift": "N",
+                "staff": [
+                  "farid"
+                ]
+              }
+            },
+            {
+              "id": "R8b",
+              "text": "Esha unavailable on days 9, 10 (zero-based).",
+              "type": "UNAVAILABLE",
+              "params": {
+                "days": [
+                  9,
+                  10
+                ],
+                "staff": [
+                  "esha"
+                ]
+              }
+            },
+            {
+              "id": "R11",
+              "text": "At most 6 night shifts per person over the horizon.",
+              "type": "MAX_SHIFT_TYPE_COUNT",
+              "params": {
+                "max": 6,
+                "shift": "N",
+                "staff": "ALL"
+              }
+            }
+          ]
+        },
+        "started_at": "2026-10-26T19:17:07.398999+00:00",
+        "result": {
+          "status": "SAT",
+          "solve_ms": 838.49,
+          "spec_hash": "316eaeae5404f4a6880b12ab74dace8364f57f05514b3a3f1f3c97635640ff6b",
+          "schedule_by_staff": {
+            "asha": [
+              "E",
+              "-",
+              "D",
+              "D",
+              "D",
+              "D",
+              "-",
+              "-",
+              "D",
+              "D",
+              "E",
+              "-",
+              "D",
+              "D"
+            ],
+            "bala": [
+              "D",
+              "D",
+              "D",
+              "-",
+              "D",
+              "-",
+              "D",
+              "D",
+              "D",
+              "-",
+              "D",
+              "D",
+              "-",
+              "D"
+            ],
+            "chitra": [
+              "N",
+              "-",
+              "E",
+              "-",
+              "-",
+              "-",
+              "E",
+              "N",
+              "N",
+              "-",
+              "N",
+              "N",
+              "-",
+              "E"
+            ],
+            "dev": [
+              "N",
+              "-",
+              "N",
+              "-",
+              "N",
+              "N",
+              "-",
+              "E",
+              "-",
+              "N",
+              "-",
+              "-",
+              "E",
+              "N"
+            ],
+            "esha": [
+              "D",
+              "N",
+              "-",
+              "N",
+              "-",
+              "D",
+              "N",
+              "N",
+              "-",
+              "-",
+              "-",
+              "N",
+              "N",
+              "-"
+            ],
+            "farid": [
+              "-",
+              "E",
+              "-",
+              "E",
+              "E",
+              "E",
+              "-",
+              "D",
+              "-",
+              "D",
+              "D",
+              "D",
+              "D",
+              "-"
+            ],
+            "gita": [
+              "-",
+              "N",
+              "N",
+              "N",
+              "N",
+              "-",
+              "D",
+              "-",
+              "E",
+              "E",
+              "N",
+              "-",
+              "E",
+              "N"
+            ],
+            "hari": [
+              "D",
+              "D",
+              "-",
+              "D",
+              "-",
+              "N",
+              "N",
+              "-",
+              "N",
+              "N",
+              "-",
+              "E",
+              "N",
+              "-"
+            ]
+          }
+        },
+        "latency_ms": 3043
+      }
+    ],
+    "fidelity": {
+      "matches": true,
+      "differences": [],
+      "canonical_hash": "316eaeae5404f4a6880b12ab74dace8364f57f05514b3a3f1f3c97635640ff6b",
+      "submitted_hash": "316eaeae5404f4a6880b12ab74dace8364f57f05514b3a3f1f3c97635640ff6b"
+    },
+    "checker": {
+      "valid": true,
+      "format_errors": [],
+      "violations": [],
+      "violation_count": 0,
+      "format_error_count": 0,
+      "normalized_roster": {
+        "asha": [
+          "E",
+          "-",
+          "D",
+          "D",
+          "D",
+          "D",
+          "-",
+          "-",
+          "D",
+          "D",
+          "E",
+          "-",
+          "D",
+          "D"
+        ],
+        "bala": [
+          "D",
+          "D",
+          "D",
+          "-",
+          "D",
+          "-",
+          "D",
+          "D",
+          "D",
+          "-",
+          "D",
+          "D",
+          "-",
+          "D"
+        ],
+        "chitra": [
+          "N",
+          "-",
+          "E",
+          "-",
+          "-",
+          "-",
+          "E",
+          "N",
+          "N",
+          "-",
+          "N",
+          "N",
+          "-",
+          "E"
+        ],
+        "dev": [
+          "N",
+          "-",
+          "N",
+          "-",
+          "N",
+          "N",
+          "-",
+          "E",
+          "-",
+          "N",
+          "-",
+          "-",
+          "E",
+          "N"
+        ],
+        "esha": [
+          "D",
+          "N",
+          "-",
+          "N",
+          "-",
+          "D",
+          "N",
+          "N",
+          "-",
+          "-",
+          "-",
+          "N",
+          "N",
+          "-"
+        ],
+        "farid": [
+          "-",
+          "E",
+          "-",
+          "E",
+          "E",
+          "E",
+          "-",
+          "D",
+          "-",
+          "D",
+          "D",
+          "D",
+          "D",
+          "-"
+        ],
+        "gita": [
+          "-",
+          "N",
+          "N",
+          "N",
+          "N",
+          "-",
+          "D",
+          "-",
+          "E",
+          "E",
+          "N",
+          "-",
+          "E",
+          "N"
+        ],
+        "hari": [
+          "D",
+          "D",
+          "-",
+          "D",
+          "-",
+          "N",
+          "N",
+          "-",
+          "N",
+          "N",
+          "-",
+          "E",
+          "N",
+          "-"
+        ]
+      },
+      "evidence": [
+        {
+          "rule_id": "R1",
+          "text": "At least 2 staff on D every day.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R2",
+          "text": "At least 1 staff on E every day.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R3",
+          "text": "At least 2 nurses on N every day.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R4",
+          "text": "At least 1 doctor on D every day.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R5",
+          "text": "At least 11 hours rest between consecutive-day shifts.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R6",
+          "text": "At most 5 consecutive working days per person.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R7",
+          "text": "At most 5 shifts in every rolling 7-day window per person.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R8",
+          "text": "Chitra unavailable on days 3, 4, 5 (zero-based).",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R9",
+          "text": "Everyone works at least 6 shifts in total.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R10",
+          "text": "Farid works no night shifts.",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R8b",
+          "text": "Esha unavailable on days 9, 10 (zero-based).",
+          "passed": true,
+          "violation_count": 0
+        },
+        {
+          "rule_id": "R11",
+          "text": "At most 6 night shifts per person over the horizon.",
+          "passed": true,
+          "violation_count": 0
+        }
+      ],
+      "assumption": {
+        "text": "At most one shift per person per day",
+        "passed": true
+      }
+    },
+    "verified": true
+  },
+  "mode": "aws",
+  "model_id": "apac.amazon.nova-pro-v1:0",
+  "recorded_at": "2026-10-26T19:16:36.995903+00:00",
+  "spec": {
+    "horizon_days": 14,
+    "shifts": [
+      {
+        "code": "D",
+        "start_hour": 7,
+        "duration_h": 8
+      },
+      {
+        "code": "E",
+        "start_hour": 15,
+        "duration_h": 8
+      },
+      {
+        "code": "N",
+        "start_hour": 23,
+        "duration_h": 8
+      }
+    ],
+    "staff": [
+      {
+        "id": "asha",
+        "name": "Asha",
+        "skills": [
+          "doctor"
+        ]
+      },
+      {
+        "id": "bala",
+        "name": "Bala",
+        "skills": [
+          "doctor"
+        ]
+      },
+      {
+        "id": "chitra",
+        "name": "Chitra",
+        "skills": [
+          "nurse"
+        ]
+      },
+      {
+        "id": "dev",
+        "name": "Dev",
+        "skills": [
+          "nurse"
+        ]
+      },
+      {
+        "id": "esha",
+        "name": "Esha",
+        "skills": [
+          "nurse"
+        ]
+      },
+      {
+        "id": "farid",
+        "name": "Farid",
+        "skills": [
+          "nurse"
+        ]
+      },
+      {
+        "id": "gita",
+        "name": "Gita",
+        "skills": [
+          "nurse"
+        ]
+      },
+      {
+        "id": "hari",
+        "name": "Hari",
+        "skills": [
+          "nurse"
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "id": "R1",
+        "text": "At least 2 staff on D every day.",
+        "type": "COVERAGE",
+        "params": {
+          "shift": "D",
+          "days": "ALL",
+          "min": 2
+        }
+      },
+      {
+        "id": "R2",
+        "text": "At least 1 staff on E every day.",
+        "type": "COVERAGE",
+        "params": {
+          "shift": "E",
+          "days": "ALL",
+          "min": 1
+        }
+      },
+      {
+        "id": "R3",
+        "text": "At least 2 nurses on N every day.",
+        "type": "COVERAGE",
+        "params": {
+          "shift": "N",
+          "days": "ALL",
+          "skill": "nurse",
+          "min": 2
+        }
+      },
+      {
+        "id": "R4",
+        "text": "At least 1 doctor on D every day.",
+        "type": "COVERAGE",
+        "params": {
+          "shift": "D",
+          "days": "ALL",
+          "skill": "doctor",
+          "min": 1
+        }
+      },
+      {
+        "id": "R5",
+        "text": "At least 11 hours rest between consecutive-day shifts.",
+        "type": "MIN_REST_HOURS",
+        "params": {
+          "hours": 11
+        }
+      },
+      {
+        "id": "R6",
+        "text": "At most 5 consecutive working days per person.",
+        "type": "MAX_CONSECUTIVE_DAYS",
+        "params": {
+          "max": 5
+        }
+      },
+      {
+        "id": "R7",
+        "text": "At most 5 shifts in every rolling 7-day window per person.",
+        "type": "MAX_SHIFTS_IN_WINDOW",
+        "params": {
+          "window_days": 7,
+          "max": 5
+        }
+      },
+      {
+        "id": "R8",
+        "text": "Chitra unavailable on days 3, 4, 5 (zero-based).",
+        "type": "UNAVAILABLE",
+        "params": {
+          "staff": [
+            "chitra"
+          ],
+          "days": [
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "id": "R9",
+        "text": "Everyone works at least 6 shifts in total.",
+        "type": "MIN_SHIFTS_TOTAL",
+        "params": {
+          "staff": "ALL",
+          "min": 6
+        }
+      },
+      {
+        "id": "R10",
+        "text": "Farid works no night shifts.",
+        "type": "MAX_SHIFT_TYPE_COUNT",
+        "params": {
+          "staff": [
+            "farid"
+          ],
+          "shift": "N",
+          "max": 0
+        }
+      },
+      {
+        "id": "R8b",
+        "text": "Esha unavailable on days 9, 10 (zero-based).",
+        "type": "UNAVAILABLE",
+        "params": {
+          "staff": [
+            "esha"
+          ],
+          "days": [
+            9,
+            10
+          ]
+        }
+      },
+      {
+        "id": "R11",
+        "text": "At most 6 night shifts per person over the horizon.",
+        "type": "MAX_SHIFT_TYPE_COUNT",
+        "params": {
+          "staff": "ALL",
+          "shift": "N",
+          "max": 6
+        }
+      }
+    ]
+  },
+  "changes": [
+    {
+      "rule_id": "R11",
+      "before": 5,
+      "after": 6,
+      "meaning": "Maximum nights per person"
+    }
+  ]
+}
